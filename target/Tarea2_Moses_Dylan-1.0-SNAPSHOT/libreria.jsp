@@ -10,12 +10,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Librería en línea</title>
-    <link rel="stylesheet" href="css/libreria.css">
+    <link rel="stylesheet" href="css/Libreria.css">
 </head>
 <body>
 
     <header class="header">
-        <h1>Logo y Título</h1>
+        <h1>Librería en línea Moisés y Dylan</h1>
     </header>
 
     <!-- BARRA 1: Registrar libro -->
@@ -59,6 +59,6 @@
         No se encontraron libros con esos criterios.
     </p>
 
-    <script src="js/libreria.js"></script>
+    <script src="js/Libreria.js"></script>
 </body>
 </html>
