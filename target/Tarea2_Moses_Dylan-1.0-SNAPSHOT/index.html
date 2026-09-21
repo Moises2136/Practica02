@@ -1,10 +1,144 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Start Page</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    </head>
-    <body>
-        <a href="BookServlet">Ver libros</a>
-    </body>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Biblioteca</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Arial, sans-serif;
+      font-size: 12px;
+      color: white;
+      background: #465307;
+    }
+
+    header {
+      padding: 12px 10px;
+      background: #596708;
+    }
+
+    .navbar,
+    .filters,
+    .books {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .navbar {
+      padding: 10px 14px;
+    }
+
+    .filters {
+      justify-content: center;
+      gap: 10px;
+      padding: 4px 20px 12px;
+    }
+
+    button,
+    input {
+      width: 85px;
+      height: 20px;
+      border: 0;
+      border-radius: 0;
+      background: #b7a347;
+      color: white;
+      font-size: 10px;
+      text-align: center;
+    }
+
+    button {
+      cursor: pointer;
+    }
+
+    .select-button::after {
+      content: "";
+      display: inline-block;
+      margin-left: 7px;
+      border: 4px solid transparent;
+      border-top-color: #ddd;
+      transform: translateY(3px);
+    }
+
+    .filters label {
+      margin-right: -4px;
+    }
+
+    .books {
+      justify-content: space-around;
+      padding: 4px 18px 18px;
+    }
+
+    .book {
+      width: 96px;
+      text-align: center;
+    }
+
+    .cover {
+      display: grid;
+      place-items: center;
+      width: 96px;
+      height: 129px;
+      margin-bottom: 8px;
+      background: #9c9b9b;
+    }
+
+    .book-title {
+      margin: 0;
+      font-weight: normal;
+      font-size: 11px;
+    }
+
+    @media (max-width: 500px) {
+      .navbar,
+      .filters,
+      .books {
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>Logo y Título</header>
+
+  <nav class="navbar">
+    <button>Título</button>
+    <button>Autor</button>
+    <button class="select-button">Precio</button>
+    <button>Registrar libro</button>
+  </nav>
+
+  <section class="filters">
+    <label for="search">Buscar:</label>
+    <input id="search" type="text" placeholder="Título" />
+    <button>Autor</button>
+    <button>Precio</button>
+  </section>
+
+  <main class="books">
+    <article class="book">
+      <div class="cover">Libro</div>
+      <h2 class="book-title">Texto</h2>
+    </article>
+
+    <article class="book">
+      <div class="cover">Libro</div>
+      <h2 class="book-title">Texto</h2>
+    </article>
+
+    <article class="book">
+      <div class="cover">Libro</div>
+      <h2 class="book-title">Texto</h2>
+    </article>
+  </main>
+</body>
 </html>
