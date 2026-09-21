@@ -56,7 +56,7 @@
     </main>
 
     <p class="mensaje-vacio" id="mensajeVacio" style="display: none;">
-        No se encontraron libros con esos criterios.
+        No se encontraron libros
     </p>
 
     <script src="js/Libreria.js"></script>
